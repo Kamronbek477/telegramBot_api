@@ -13,4 +13,4 @@ def sendMessage(chat_id:str, text:str):
     response = requests.post(url=URL, data=payload)
     return response.json()
     
-print(sendMessage(5575549228, "*Hello*  _Hello_"))
+print(sendMessage(5575549228, "*Hello*  _Hello_ __python__ ||Spolier||"))
