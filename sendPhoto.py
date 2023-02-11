@@ -16,11 +16,11 @@ def sendPhoto(chat_id:str,photo:str):
 
     
 
-# photo_url='https://random.dog/2bff25d0-c721-4078-8cc9-f3ce6b464428.jpg'
+photo_url='https://random.dog/2bff25d0-c721-4078-8cc9-f3ce6b464428.jpg'
 # photo_id = 'AgACAgIAAxkDAAMgY7evYvSyDJQ8DS-1S5Irjcd9cIgAAoa_MRvjDsFJ4H7lvD-PEXwBAAMCAAN4AAMtBA'
-file_id = "AgACAgIAAxkDAAIB8WPnabn07NQxjqC93jjWesVQlW-EAAKbxDEbjLg5S_wd5Wg7fhkeAQADAgADcwADLgQ"
+# file_id = "AgACAgIAAxkDAAIB8mPnahr4bO4YvJlCqDv2XBALb-X1AAKbxDEbjLg5S_wd5Wg7fhkeAQADAgADeQADLgQ"
 
 # img = open('logo.jpg','rb').read()
-print(sendPhoto(5575549228, file_id))
+print(sendPhoto(5575549228, photo_url))
 
 # send photo with three ways: url, id, file
