@@ -1,10 +1,8 @@
 import requests
 
-TOKEN = ''
-BASE_URL = f'https://api.telegram.org/bot{TOKEN}/getUpdates'
+TOKEN = '5661659754:AAHjcXFhVC9UdI0Q83YBMReNptJXBXFFESs'
 
-
-response = requests.get(url=BASE_URL)
-updates=response.json()['result']
-
-# print each update
+def get_updates():
+    BASE_URL = f'https://api.telegram.org/bot{TOKEN}/getUpdates'
+    response = requests.get(url=BASE_URL)
+    return response.json()['result']
