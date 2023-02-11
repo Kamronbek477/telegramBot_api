@@ -9,8 +9,8 @@ def sendMessage(chat_id:str, text:str):
     payload = {
         'chat_id':chat_id, 
         'text':text,
-        'parse_mode':'MarkdownV2'}
+        'parse_mode':'HTML'}
     response = requests.post(url=URL, data=payload)
     return response.json()
-    
-print(sendMessage(5575549228, "*Hello*  _Hello_ __python__ ||Spolier||"))
+
+print(sendMessage(5575549228, "<b>Hello</b> <i>HELLO</i> <a href='google.com'>GOOGLE</a>"))
