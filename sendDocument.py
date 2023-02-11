@@ -23,7 +23,16 @@ def sendContact(chat_id, number, first_name, last_name="No Name"):
     return r.json() 
 
     
+def sendDice(chat_id, emoji):
+    params = {
+        'chat_id':chat_id,
+        'emoji':emoji,
+    }
+    URL = f'https://api.telegram.org/bot{TOKEN}/sendDice'
+    r = requests.post(URL, params=params)
+    return r.json() 
+
 data = open('sendPhoto.py','rb')
-print(sendContact(5575549228, "+998996694177", "Ilhom"))
+print(sendDice(5575549228, emoji='🎰'))
 
 # send photo with three ways: url, id, file
