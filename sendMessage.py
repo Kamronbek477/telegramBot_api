@@ -13,4 +13,5 @@ def sendMessage(chat_id:str, text:str):
     response = requests.post(url=URL, data=payload)
     return response.json()
 
-print(sendMessage(5575549228, "<b>Hello</b> <i>HELLO</i> <a href='google.com'>GOOGLE</a>"))
+if __name__ == "__main__":
+    print(sendMessage(5575549228, "<b>Hello</b> <i>HELLO</i> <a href='google.com'>GOOGLE</a>"))
