@@ -7,7 +7,7 @@ def sendMessage(chat_id:str, text:str):
     button1 = {'text':'Dog'}
     button2 = {'text':'Cat'}
 
-    keyboard = [[button1, button2]]
+    keyboard = [[button1, button2],[button1]]
 
     reply_markup = {'keyboard':keyboard}
 
